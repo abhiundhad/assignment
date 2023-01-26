@@ -1,0 +1,154 @@
+header{
+
+    height: 80px;
+    /* width: 100px; */
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    
+}
+#menubar{
+top: 34px;
+left: 29px;
+width: 30px;
+height: 30px;
+/* background: #000000 0% 0% no-repeat padding-box; */
+margin-left: 15;
+margin-top: 15px;
+opacity: 1;
+
+
+}
+#logo{
+    top: 25px;
+left: 72px;
+width: 142px;
+height: 30px;
+margin-top: 15px;
+margin-left: 25px;
+
+opacity: 1;
+
+/* padding-left: 25px; */
+/* position: relative; */
+
+}
+#search{
+    top: 32px;
+left: 291px;
+width: 16px;
+height: 16px;
+/* UI Properties */
+/* background: #000000 0% 0% no-repeat padding-box; */
+opacity: 1;
+margin-top: 21px;
+margin-left: 77px;
+}
+#searchbox{
+    text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #0c0000;
+opacity: 1;
+width: 800px;
+height: 21px;
+margin-top: 18px;
+margin-left: 15px;
+border: 0px;
+}
+#sideheader{
+    display:flex;
+    flex-direction:row;
+    margin-left:150px;
+}
+#notification{
+width: 22px;
+height: 22px;
+margin-top: 15px;   
+
+
+}
+#profile{
+    height: 35px;
+    width: 35px;
+    margin-top:10px;
+    margin-left:40px;
+
+}
+#aerrow{height:15px;
+    width:15px;
+    margin-top:18px;
+
+
+}
+span {
+    height: 21px;
+    width: 68px;
+    margin-top:15px;
+    font-size:16px;
+    margin-left:10px;
+}
+#A{
+    top: 80px;
+left: 0px;
+width: 242px;
+height: 1890px;
+opacity: 1;
+display: flex;
+flex-direction: column;
+
+}
+.B{
+    display: flex;
+    flex-direction: row;
+}
+.image{width: 15px;
+    height: 15px;
+    margin-left: 48px;
+    margin-top: 40px;
+}
+.text{
+    border: 0px;
+    margin-left: 13px;
+    margin-top: 35px;
+    font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+
+}
+.c{
+   
+    width: 183px;
+height: 43px;
+    display: flex;
+    flex-direction: row;
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+margin-left: 30px;
+margin-top: 30px;
+}
+.text1{
+    border: 0px;
+    width: 78px;
+  
+    margin-left: 25px;
+    margin-top: 5px;
+    font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+background-color:#FFF3F4 ;
+color:#C8242F;
+opacity: 1;
+
+
+}
+.image1{
+    background-color:#FFF3F4 ;
+    width: 15px;
+    height: 15px;
+    margin-left: 25px;
+    margin-top: 17px;
+
+}
