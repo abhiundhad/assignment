@@ -1,203 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/inerpagecss.css">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/inerpagecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section class="deshboard">
-        <header>
-            <div>
-                <img id="menubar" src="images\menu-bar.svg" alt="menubar">
-            </div>
-            <div >
-                <img id="logo" src="images\logo.svg" alt="logo">
-            </div>
-            <div>
-                <img id="search" src="images\search-icon.svg" alt="searchlogo">
-            </div>
-            <input id="searchbox" type="text" placeholder="search">
-            <div id="sideheader">
-                <img id="notification" src="images/notification-icon.svg" alt="notification">
-                <img id="profile" src="images\profile.png" alt="profile">
-                <span>John Doe</span>
-                <img id="aerrow" src="images\downward-arrow.svg" alt="aeroow">
-            </div>
-        </header>
-      
-        </section>
-        <section id="A">
-            <div class="c">
-                <img class="image1" src="images\dashboard-active.svg">
-                <p  class="text1">Dashboard</p> 
-            </div>
-            <div class="B">
-                <img class="image" src="images\graph-default.svg">
-                <p class="text">Analysis </p>
-            </div>
-            <div class="B">
-                <img class="image" src="images\inbox-default.svg">
-                <p class="text">Inbox </p>
-            </div>
-            <div class="B">
-                <img class="image" src="images\clock-default.svg">
-                <p class="text">History </p>
-            </div>
-            <div class="B">
-                <img class="image" src="images\user-default.svg">
-                <p class="text">User </p>
-            </div>
-            <div class="B">
-                <img class="image" src="images\maintenance-default.svg">
-                <p class="text">Maintenance </p>
-            </div>
-            <div class="B">
-                <img class="image" src="images\setting-default.svg">
-                <p class="text">Setting </p> 
-            </div>
-        </section>
-        <section class="analysis">
-            <h1>Analysis</h1>
-            <div class="form">
-                <h2>One Coulmn</h2>
-                <input type="text" placeholder="Name" class="name"><br>
-                 <select class="select" >
-                    <option>Dropdown</option>
-                 </select><br>
-                <!-- <input type="text" placeholder="Multiple line" class="multipleline"><br> -->
-                <textarea class="multipleline" placeholder="Multiple line"></textarea>
-                
-                <h2>Two Coloumn</h2>
-                <div class="NU">
-                    <input class="name1"  type="text" placeholder="name">
-                <!-- <input  class="name1" type="text" placeholder="Username"> -->
-                <fieldset class="name2"><legend>Username</legend>jhondoe</fieldset>
-                </div>
-                <div class="PD">
-                    <input class="name1"  type="text" placeholder="Password">
-                    <select class="name1" >
-                        <option>Dropdown</option>
-                     </select>
-                </div>
+    <div>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
+            <div class="container-fluid">
+                <img src="./images/menu-bar.svg" alt="logo" class="dashboard-toggle-logo">
+                <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo" class="dashboard-web-logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><img src="./images/menu-bar.svg" alt="logo"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="offcanvas-title" id="offcanvasNavbarLabel"
+                            src="./images/mobile-header-logo.svg"></img>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1">
+                            <li class="nav-item d-flex align-items-center dashboard-search-toggle">
+                                <img src="./images/search-icon.svg" alt="" class="dashboard-search-icon">
+                                <div class="searchspace">
+                                    <input type="search" class="form-control rounded searchbar" placeholder="Search"
+                                        aria-label="Search" aria-describedby="search-addon" />
+                                </div>
+                            </li>
+                        </ul>
 
-                <h2>Three Column</h2>
-                <div class="FPD">
-                    <fieldset class="name3"><legend>Focus</legend></fieldset>
-                    <fieldset class="name4"><legend>Password</legend><input type="password" value="12345678"class="password"></fieldset>
-                    <fieldset class="name5"><legend>Disable</legend>jhondoe</fieldset>
-                </div>
+                        <ul class="navbar-nav justify-content-end dashboard-nav-sidebar-toggle">
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail dashbord-sidebar-detail dashboard-active-tab d-flex">
+                                    <img src="./images/dashboard-active.svg" alt="" class="dashboard-active sidebarimg">
+                                    <div class="">Dashboard</div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail d-flex">
+                                    <img src="./images/graph-default.svg" alt="" class="graph-default sidebarimg ">
+                                    <div class="">Analysis</div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail d-flex">
+                                    <img src="./images/inbox-default.svg" alt="" class="inbox-default sidebarimg ">
+                                    <div class="">Inbox</div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail d-flex">
+                                    <img src="./images/clock-default.svg" alt="" class="clock-default sidebarimg ">
+                                    <div class="">History</div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail d-flex">
+                                    <img src="./images/user-default.svg" alt="" class="user-default sidebarimg ">
+                                    <div class="">Users</div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail d-flex">
+                                    <img src="./images/maintenance-default.svg" alt=""
+                                        class="maintenance-default sidebarimg ">
+                                    <div class="">Maintenance</div>
+                                </div>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <div class="sidebar-detail d-flex">
+                                    <img src="./images/setting-default.svg" alt="" class="setting-default sidebarimg ">
+                                    <div class="">Setting</div>
+                                </div>
+                            </li>
+                        </ul>
 
-                <h2>Four Column</h2>
-                <div class="dnus">
-                    <fieldset class="name6"><legend>Designation</legend>UI Designer</fieldset>
-                    <input class="name7"  type="text" placeholder="name">
-                    <fieldset class="name8"><legend>Username</legend>jhondoe</fieldset>
-                    <select class="name9" >
-                        <option>Select</option>      
-                     </select>
-                </div> 
-
-                <div class="NU">
-                    <p1>Enter Valid Data</p1>
-                    <p2>Enter your full Name as per ID</p2>
-                </div>
-                
-                <div class="otherdesign">
-                    <h2>Other Design Element</h2>
-                    <h3>File Upload</h3>
-                    <div class="upload">
-                        <div class="uploadbtn">
-                            <img src="images/cloud-upload-icon.svg" class="uploadimg">
-                            <p class="uploadtxt">Upload</p>
-                        </div>
-                        <p class="noitemselect">No item Selected</p>
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item d-flex align-items-center">
+                                <img src="./images/notification-icon.svg" alt="" class="dashboard-notification-icon">
+                                <img src="./images/profile.png" alt="" class="dashboard-profile-icon">
+                                <div>John Doe</div>
+                                <img src="./images/downward-arrow.svg" alt="" class="dashboard-select-downward">
+                            </li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </nav>
 
-                <div class="radio">
-                    <h3> Radio Button</h3>
-                    <div class="radiobtn">
-                        <div class="radio1">
-                            <input type="radio" class="option1">
-                            <lable for="option1" class="option1txt">
-                                Option 1
-                            </lable>
+        <div class="container-fluid well" id="home" style="display:block; padding-top:60px;">
+            <div class="row">
+                <div class="col-lg-2 dashboard-sidebar-toggle">
+                    <div class="sidebar">
+                        <div class="sidebar-detail dashbord-sidebar-detail dashboard-active-tab d-flex">
+                            <img src="./images/dashboard-active.svg" alt="" class="dashboard-active sidebarimg">
+                            <div class="">Dashboard</div>
                         </div>
-                        <div class="radio2">
-                            <span class="radiobtnicon2"></span>
-                            <img src="images/radio-checked-icon.svg" class="radiobtn2icon">
-                            <label >Option2</label>
+                        <div class="sidebar-detail d-flex">
+                            <img src="./images/graph-default.svg" alt="" class="graph-default sidebarimg ">
+                            <div class="">Analysis</div>
+                        </div>
+                        <div class="sidebar-detail d-flex">
+                            <img src="./images/inbox-default.svg" alt="" class="inbox-default sidebarimg ">
+                            <div class="">Inbox</div>
+                        </div>
+                        <div class="sidebar-detail d-flex">
+                            <img src="./images/clock-default.svg" alt="" class="clock-default sidebarimg ">
+                            <div class="">History</div>
+                        </div>
+                        <div class="sidebar-detail d-flex">
+                            <img src="./images/user-default.svg" alt="" class="user-default sidebarimg ">
+                            <div class="">Users</div>
+                        </div>
+                        <div class="sidebar-detail d-flex">
+                            <img src="./images/maintenance-default.svg" alt="" class="maintenance-default sidebarimg ">
+                            <div class="">Maintenance</div>
+                        </div>
+                        <div class="sidebar-detail d-flex">
+                            <img src="./images/setting-default.svg" alt="" class="setting-default sidebarimg ">
+                            <div class="">Setting</div>
                         </div>
                     </div>
                 </div>
-                 
-                <h4>Checkbox</h4>
-                <div class="checkbox">
-                    
-                    <div class="checkbox1">
-                        <span class="icone1"></span>
-                        <img src="images/check-icon.svg" class="check">
-                        <label class="opt1">Option1</label>
-                    </div>
-                    <div class="checkbox2">
-                        <span class="icone2"></span>
-                        <img src="images/checked-icon.svg" class="check1">
-                        <label class="opt2">Option2</label>
-                    </div>     
-                </div>
+                <div class="col-lg-10 col-12 maindiv">
+                    <div class="row">
+                        <div class="col-3 mt-4 me-auto analysistxt">
+                            Analysis
+                        </div>
+                        <div class="container-fluid form mt-4 ms-3 ">
+                            <form>
+                                <fieldset>
+                                    <div class="col-4 mt-4 ms-4 onetxt">
+                                        <legend>One Column</legend>
+                                    </div>
+                                    <div class=" col-lg-11 col-md-11 col-sm-11 mt-4  ms-4 namebox">
+                                        <input type="text" id="name" class="form-control" placeholder="name">
+                                    </div>
+                                    <div class=" col-lg-11 col-md-11 col-sm-11 mt-3 ms-4 dropbox">
+                                        <select id="disabledSelect" class="form-select">
+                                          <option>Dropdown</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-floating col-lg-11 col-md-11 col-sm-11 mt-3 ms-4 multitxt">
+                                        <textarea class="form-control" placeholder="multilinetext" style="height: 100px" id="floatingTextarea"></textarea>
+                                        <label for="floatingTextarea">multilinetext</label>
+                                      </div>
+                                      <div class="col-4 mt-5 ms-4 onetxt">
+                                        <legend>Two Column</legend>
+                                    </div>
+                                    <div class=" twoclm ">
+                                        <div class="row mt-4">
+                                            <div class="col col-lg-5 col-md-12 mt-4 ms-4 col-sm-12">
+                                                <input type="text" id="name" class="form-control" placeholder="name">
+                                            </div>
+                                            <div class="col col-lg-5 col-md-12 mt-4 ms-4 col-sm-12">
+                                                <input type="text" id="jhon" class="form-control" placeholder="jhondoe">
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col col-lg-5 col-md-12 mt-4 ms-4 col-sm-12">
+                                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                            </div>
+                                            <div class="col col-lg-5 col-md-12 mt-4  ms-4 col-sm-12">
+                                                <select id="disabledSelect" class="form-select">
+                                                    <option>Dropdown</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                <p class="snack">Snackbar</p>
-                <div class="snack1">
-                    <div class="error">
-                        <img src="./images/error-icon.svg" alt="error" class="logos">
-                        <p class="errortxt">This is an error Message</p>
-                    </div>
-                    <div class="info">
-                        <img src="./images/info-icon.svg" alt="info" class="logos">
-                        <p class="infotxt">This is an information Message!</p>
+                                    <div class="col-4 mt-5 ms-4 onetxt">
+                                        <legend>Thierd Column</legend>
+                                    </div>
+                                    <div class="tiredclmn">
+                                        <div class="row mt-4">
+                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-4 ms-4">
+                                                <input type="text" id="focus" class="form-control" placeholder="focus">
+
+                                            </div>
+                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-4 ms-4">
+                                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                                            </div>
+                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-4 ms-4">
+                                                <input type="text" id="disable" class="form-control" placeholder="jhondoe">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-4 mt-5 ms-4 onetxt">
+                                        <legend>Four Column</legend>
+                                    </div>
+                                    <div class="fourclm mt-4 ">
+                                        <div class="row mt-4">
+                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4 d-flex-column">
+                                                <input type="text" id="designation" class="form-control" placeholder="UI Design">
+                                                <p class=" warning1 mt-2 mb-0"> Enter valid data</p>
+                                            </div>
+                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4 d-flex-column">
+                                                <input type="text" id="name" class="form-control" placeholder="name">
+                                                <p class=" warning2 mt-2 mb-0"> Enter your fullname as per ID</p>
+                                            </div>
+                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4">
+                                                <input type="text" id="jhon" class="form-control" placeholder="jhondoe">
+                                            </div>
+                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4">
+                                                <select id="Select" class="form-select">
+                                                    <option>Select</option>
+                                                </select2>
+                                            </div>
+
+                                        </div>
+                                       
+                                    </div>
+                                </fieldset>
+                               
+                            </form>
+
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="snack1">
-                    <div class="warning">
-                        <img src="./images/warning-icon.svg" alt="warning" class="logos">
-                        <p class="warningtxt">This is a warning Message!</p>
-                    </div>
-                    <div class="success">
-                        <img src="./images/success-icon.svg" alt="success" class="logos">
-                        <p class="succtxt">This is a success Message!</p>
-                    </div>
-                </div>
+               
+        </div>
+    </div>
+</div>
 
-                <p class="call" >Call to action</p>
-                <div class="action">
-                    <div class="primary">
-                        <p class="primarytxt">Primary</p>
-                    </div>
-                    <div class="secondary">
-                        <p class="secondarytxt">Secondary</p>
-                    </div>
-                </div>
 
-                <p class="tabs">Tabs</p>
-                <div class="tabs123">
-                    <p class="tab1">Tab 1</p>
-                    <p class="tab2">Tab 2</p>
-                    <p class="tab3">Tab 3</p>
-                </div>
-                <hr class="line">
-                <hr class="line2">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
-                <p class="pra1">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-                </p>
-
-                
-    
-                
-            </div>
-        </section>
 </body>
+
 </html>
