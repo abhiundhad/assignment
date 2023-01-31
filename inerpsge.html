@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/_variable.scss">
 </head>
 
 <body>
@@ -137,13 +138,13 @@
                 </div>
                 <div class="col-lg-10 col-12 maindiv">
                     <div class="row">
-                        <div class="col-3 mt-4 me-auto analysistxt">
+                        <div class="col-3 mt-3 me-auto analysistxt">
                             Analysis
                         </div>
-                        <div class="container-fluid form mt-4 ms-3 ">
+                        <div class="container-fluid form mt-3 ms-3 ">
                             <form>
                                 <fieldset>
-                                    <div class="col-4 mt-4 ms-4 onetxt">
+                                    <div class="col-4 mt-3 ms-4 onetxt">
                                         <legend>One Column</legend>
                                     </div>
                                     <div class=" col-lg-11 col-md-11 col-sm-11 mt-4  ms-4 namebox">
@@ -158,11 +159,12 @@
                                         <textarea class="form-control" placeholder="multilinetext" style="height: 100px" id="floatingTextarea"></textarea>
                                         <label for="floatingTextarea">multilinetext</label>
                                       </div>
-                                      <div class="col-4 mt-5 ms-4 onetxt">
+                                      <div class="col-4 mt-4 mb-0 ms-4 onetxt">
                                         <legend>Two Column</legend>
                                     </div>
+                                    
                                     <div class=" twoclm ">
-                                        <div class="row mt-4">
+                                        <div class="row mt-3">
                                             <div class="col col-lg-5 col-md-12 mt-4 ms-4 col-sm-12">
                                                 <input type="text" id="name" class="form-control" placeholder="name">
                                             </div>
@@ -182,50 +184,198 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-4 mt-5 ms-4 onetxt">
+                                    <div class="col-4 mt-3  mb-0 ms-4 onetxt">
                                         <legend>Thierd Column</legend>
                                     </div>
                                     <div class="tiredclmn">
-                                        <div class="row mt-4">
-                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-4 ms-4">
+                                        <div class="row mt-3">
+                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-3 ms-4">
                                                 <input type="text" id="focus" class="form-control" placeholder="focus">
 
                                             </div>
-                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-4 ms-4">
+                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-3 ms-4">
                                                 <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
                                             </div>
-                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-4 ms-4">
+                                            <div class="col col-lg-3 col-md-4 col-sm-12 mt-3 ms-4">
                                                 <input type="text" id="disable" class="form-control" placeholder="jhondoe">
                                             </div>
                                         </div>
 
                                     </div>
 
-                                    <div class="col-4 mt-5 ms-4 onetxt">
+                                    <div class="col-4 mt-4 ms-4 mb-0 onetxt">
                                         <legend>Four Column</legend>
                                     </div>
-                                    <div class="fourclm mt-4 ">
-                                        <div class="row mt-4">
-                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4 d-flex-column">
+                                    <div class="fourclm mt-3">
+                                        <div class="row ">
+                                            <div class="col col-lg-2 col-md-5 col-sm-11 mt-3 ms-4  me-4 d-flex-column">
                                                 <input type="text" id="designation" class="form-control" placeholder="UI Design">
                                                 <p class=" warning1 mt-2 mb-0"> Enter valid data</p>
                                             </div>
-                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4 d-flex-column">
+                                            <div class="col col-lg-2 col-md-5 col-sm-11 mt-4 ms-4 me-4 d-flex-column">
                                                 <input type="text" id="name" class="form-control" placeholder="name">
                                                 <p class=" warning2 mt-2 mb-0"> Enter your fullname as per ID</p>
                                             </div>
-                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4">
+                                            <div class="col col-lg-2 col-md-5 col-sm-11 mt-4 ms-4 me-4">
                                                 <input type="text" id="jhon" class="form-control" placeholder="jhondoe">
                                             </div>
-                                            <div class="col col-lg-2 col-md-5 col-sm-12 mt-4 ms-4">
+                                            <div class="col col-lg-2 col-md-5 col-sm-11 mt-4 ms-4 me-4">
                                                 <select id="Select" class="form-select">
                                                     <option>Select</option>
-                                                </select2>
+                                                </select>
                                             </div>
 
                                         </div>
                                        
                                     </div>
+                                    <div class="col-4 mt-3 ms-4 onetxt">
+                                        <legend>Other Design Elements</legend>
+                                    </div>
+                                    <div class="row mt-3 ms-4">
+                                        <div class="row fileupl  ">
+                                            <div class="col col-5 mt-2  ">
+                                                <legend class="uploadtxt">File Upload</legend>
+                                            </div>
+                                            </div>
+
+                                            <div class="row mt-1">
+                                            <div class="col col-lg-2 col-md-2 col-sm-3  me-4  mt-2  d-flex">
+                                                <div class="button justify-content-center d-flex">
+                                                    <img src="/images/cloud-upload-icon.svg"  alt="" clas="uploadimg">
+                                                    Upload
+                                                </div>
+                                                </div>
+                                                <div class="col col-lg-2 col-md-2 col-sm-3  me-4  mt-3   d-flex">
+                                                <div class="noitem justify-content-start ms-lg-2 col-md-4 col-sm-5 ">
+                                                   <p class="noitemtxt">No item Selected</p>
+                                                </div>
+                                            </div>
+                                                 
+                                        </div>
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col col-4 mt-3 ms-4 onetxt">
+                                                <legend>Radio button</legend>
+                                            </div>
+                                        </div>
+                                        <div class="row ms-2 mt-2">
+                                            <div class="col col-lg-2 col-md-2 col-sm-2 mt-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                      Option1
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="col col-lg-2 col-md-2 col-sm-2 mt-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" >
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                     Option2
+                                                    </label>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col col-4 mt-3 ms-4 onetxt">
+                                                <legend>Checkbox</legend>
+                                            </div>
+                                        </div>
+                                        <div class="row ms-2 mt-2">
+                                            <div class="col col-lg-2 col-md-3 col-sm-2 mt-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                      Option 1
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="col col-lg-2 col-md-3 col-sm-2 mt-2">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                      Option 2
+                                                    </label>
+                                                  </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col col-4 mt-4 ms-4 onetxt">
+                                                <legend>Snackbar</legend>
+                                            </div>
+                                
+                                        </div>
+                                        <div class="row">
+                                            <div class="col snackbar1  col-lg-5 col-md-5 col-sm-12 mt-3 ms-4">
+                                                <img src="./images/error-icon.svg" alt="error" class="logos">
+                                                 <p class="errortxt">This is an error Message</p>
+                                            </div>
+                                            <div class="col snackbar2 col-lg-5 col-md-5 col-sm-12 mt-3 ms-4">
+                                                <img src="./images/info-icon.svg" alt="info" class="logos">
+                                                 <p class="infotxt">This is an information Message!</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col snackbar3 col-lg-5 col-md-5 col-sm-12 mt-3 ms-4">
+                                                <img src="./images/warning-icon.svg" alt="warning" class="logos">
+                                                <p class="warningtxt">This is a warning Message!</p>
+                                            </div>
+                                            <div class="col snackbar4 col-lg-5 col-md-5 col-sm-12 mt-3  ms-4">
+                                                <img src="./images/success-icon.svg" alt="success" class="logos">
+                                                <p class="succtxt">This is a success Message!</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col col-4 mt-4 ms-4 onetxt">
+                                                    <legend>Call to action</legend>
+                                                </div>
+                                            </div>
+                                            <div class="row me-auto">
+                                                <div class="col calltoaction mt-4">
+                                                    <button class="primary">Primary</button>
+                                                    <button class="secondary">Secondary</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col col-4 mt-4 ms-4 onetxt">
+                                                    <legend>Tabs</legend>
+                                                </div>
+                                            </div>
+                                            <div class="tabs mt-2">
+                                                <ul class="ul">
+                                                    <li class="li">Tab1</li>
+                                                    <li class="li">Tab2</li>
+                                                    <li class="li">Tab3</li>
+                                                    <span class="underline"></span>
+                                                </ul>
+                        
+                                                <p class="tabtxt">
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing                        </p>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                   
+                                    
                                 </fieldset>
                                
                             </form>

@@ -110,7 +110,7 @@ color: #3E3E3E;
 opacity: 1;
 }
 legend{
-  width: 200%;
+  width: 400%;
 }
 .form{
   width: 1218px;
@@ -134,3 +134,126 @@ height: 16px;
   letter-spacing: 0px;
   text-align: left;
 }
+.uploadtxt{
+  width: 90px;
+height: 24px;
+text-align: left;
+letter-spacing: 0px;
+color: #3E3E3E;
+opacity: 1;
+font-size: 18px;
+}
+.button{
+  width: 124px;
+height: 36px;
+border-collapse: separate;
+border: 1px solid #C8242F;
+border-radius: 18px;
+opacity: 1;
+}
+.noitemtxt{
+  width: 91px;
+height: 16px;
+text-align: left;
+font-size: 12px;
+letter-spacing: 0px;
+color: #ADADAD;
+opacity: 1;
+}.form-check-input:checked {
+  background-color:#C8242F;
+  border-color:#ADADAD;
+}
+  
+.form-check-input {
+  background-color: #FFFFFF;
+}
+
+.form-check-input[type=radio] {
+    border-radius: 50%;
+    /* background-color: #C8242F; */
+}
+.snackbar1 , .snackbar2 , .snackbar3 , .snackbar4{
+  display: flex;
+  flex-direction: row;
+  width: 563px;
+ height: 44px;
+ border: 1px solid;
+border-radius: 5px;
+opacity: 1;
+}
+.snackbar2{border-color:#00B9E1 ;}
+.snackbar1{border-color: #FF3535;}
+.snackbar3{ border-color: #FFA800;}
+.snackbar4{ border-color:#00AF27 ;}
+.succtxt{
+  color: #00AF27;
+}
+.warningtxt{
+  color:#FFA800 ;
+}
+.infotxt{
+  color:#00B9E1 ;
+}
+.errortxt{
+  color: #FF3535;
+}
+.logos{
+  height:22px ;
+  width: 22px;}
+ 
+  .primary {
+    color: #fff3f4;
+    background-color: #c8242f;
+    border-color: #c8242f;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 32px;
+    border-radius: 23px;
+  }
+  
+  .secondary {
+    border-color: #c8242f;
+    color: #c8242f;
+    background-color: #ffffff;
+    border-radius: 23px;
+  }
+  .ul {
+    display: flex;
+    gap: 4rem;
+    margin-left: 21px;
+    position: relative;
+  }
+  
+  .li {
+    list-style: none;
+    padding: 0.5rem;
+    color: #ADADAD;
+    margin-left: -27px;
+  }
+  
+  .ul {
+    border-bottom: 1px solid #ADADAD;
+    width: 90%;
+  }
+  
+  .underline {
+    width: 67px;
+    height: 4px;
+    color: #C8242F;
+    background-color: #C8242F;
+    position: absolute;
+    top: 37px;
+    left: 1px;
+  }
+  
+  .tabtxt{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    width: 90%;
+  }
+  .maincenter {
+    display: flex;
+  
+  }
+  
