@@ -112,7 +112,7 @@
 }
 
 
-.disc1 {
+.boxs1 {
   width: 100px;
 }
 .dot1 {
@@ -139,10 +139,10 @@
   border-radius: 50%;
   background-color: #ebc844;
 }
-.dis1,
-.dis2,
-.dis3,
-.dis4 {
+.box1,
+.box2,
+.box3,
+.box4 {
   display: flex;
 }
 .dottext {
@@ -150,11 +150,11 @@
 }
 
 @media screen and (max-width: 361px) {
-  .disc1 {
+  .boxs1 {
     margin-left: 0%;
     margin-right: 10%;
   }
-  .disc2 {
+  .boxs2 {
     margin-left: 0%;
   }
 }
@@ -166,7 +166,7 @@
   overflow-x: auto;
   background-color: #ffffff;
 }
-.invoices {
+.invoice {
   float: left;
   font-size: 22px;
   color: #3e3e3e;
@@ -175,7 +175,7 @@
   margin-left: 29px;
 }
 
-.viewAll {
+.view {
   float: right;
   font-size: 13px;
   font-weight: 500;
